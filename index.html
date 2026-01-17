@@ -3446,26 +3446,12 @@
 		});
 	});
 		
-	function updateFavicon() {
-			const favicon = document.getElementById('favicon');
-			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				// Sötét mód
-				favicon.href = 'logo_white_IC.PNG';
-			} else {
-				// Világos mód
-				favicon.href = 'logo_black_IC.PNG';
-			}
-		}
-		
-		// Ellenőrzés oldal betöltéskor
-		updateFavicon();
-		
-		// Ellenőrzés mód váltáskor
-		window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
+	
 </script>
 
 </body>
 </html>
+
 
 
 
