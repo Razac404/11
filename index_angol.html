@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ST-Management</title>
-	<link rel="icon" href="logo_black_IC.png" type="image/png" id="favicon>
+	<link rel="icon" href="logo_black_IC.png" type="image/png" id="favicon">
 	<style>
 	
 		*{
@@ -200,7 +200,10 @@
 			padding-top: 2vh;
 			color:white;
 			grid-template-rows: 20% 20% 20% 20% 20%;
-			
+			background:
+				radial-gradient(1200px 600px at 20% 15%, rgba(120, 180, 255, 0.18), transparent 60%),
+				radial-gradient(1000px 520px at 85% 70%, rgba(120, 220, 170, 0.12), transparent 55%),
+				linear-gradient(180deg, #ffffff 0%, #f7f4ee 45%, #f1ece4 100%);
 			
 		}
 		
@@ -213,49 +216,37 @@
 		#ign_kezeles_szolg_fooldal{
 			grid-column: 2;
 			grid-row: 1;
-			background:
-				radial-gradient(90% 70% at 50% 50%, rgba(80, 150, 240, 0.32), transparent 70%),
-				linear-gradient(180deg, #050c1c 0%, #07142b 50%, #050c1c 100%);
-			
+			background: #07142b;
 		}
 
 		#ign_kivitelezes_szolg_fooldal{
 			grid-column: 2;
 			grid-row: 2;
-			/*box-shadow: inset 0 0 6px 2px rgba(0, 128, 0, 0.45),inset 0 0 10px 6px rgba(34, 139, 34, 0.35),inset 0 0 14px 10px rgba(50, 205, 50, 0.25),inset 0 0 18px 14px rgba(144, 238, 144, 0.18);*/
-			background:
-				/* broader light in the middle */
-				radial-gradient(90% 70% at 50% 50%, rgba(80, 200, 140, 0.32), transparent 70%),
-				/* darker top/bottom base */
-				linear-gradient(180deg, #06160d 0%, #0b2a16 50%, #06160d 100%);
+			background: #0b2a16;
 		}
 		
 		
 		#ign_okosotthon_szolg_fooldal{
 			grid-column: 2;
 			grid-row: 3;
-			/*box-shadow: 0 0 50px darkred inset;*/
-			background:
-				radial-gradient(90% 70% at 50% 50%, rgba(230, 90, 90, 0.32), transparent 70%),
-				linear-gradient(180deg, #1c0404 0%, #2a0b0b 50%, #1c0404 100%);
+			background: #2a0b0b;
 		}
 		
 		#ign_takaritás_szolg_fooldal{
 			grid-column: 2;
 			grid-row: 4;
-			/*box-shadow: 0 0 100px deepskyblue inset;*/
+			/*box-shadow: 0 0 100px deepskyblue inset;
 			background:
 				radial-gradient(95% 75% at 50% 50%, rgba(140, 200, 255, 0.32), transparent 72%),
 				linear-gradient(180deg, #0f2338 0%, deepskyblue 50%, #0b1829 100%);
-				
+			*/
+			background: deepskyblue;			
 		}
 		
 		#ign_tanacsadas_szolg_fooldal{
 			grid-column: 2;
 			grid-row: 5;
-			background:
-				radial-gradient(90% 70% at 50% 50%, rgba(250, 210, 80, 0.32), transparent 70%),
-				linear-gradient(180deg, #4a390e 0%, #5a4310 50%, #4a390e 100%);
+			background: #5a4310;
 		}
 		
 		
@@ -3278,12 +3269,7 @@
 			}
 		});
 		
-		window.addEventListener('load', function() {
-	  const ta = document.getElementById('uzenet');
-	  if (ta) {
-		ta.value = 'monitor height: ' + window.innerHeight + 'px' + '  |  monitor width: ' + window.innerWidth + 'px';
-	  }
-	});
+		
 
 		window.onload = function () {
 
